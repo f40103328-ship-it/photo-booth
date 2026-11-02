@@ -200,9 +200,8 @@
 
       console.log("Submitting form...");
 console.log(document.getElementById("payload").value.length);
-document.getElementById("uploadForm").requestSubmit();
+document.getElementById("uploadForm").submit();
     }
-
     window.addEventListener("message", function(event) {
       if (event.source !== document.getElementById("uploadFrame").contentWindow) {
         return;
