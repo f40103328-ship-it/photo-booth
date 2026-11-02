@@ -198,7 +198,9 @@
       document.getElementById("payload").value =
         JSON.stringify({ photos: photos });
 
-      document.getElementById("uploadForm").submit();
+      console.log("Submitting form...");
+console.log(document.getElementById("payload").value.length);
+document.getElementById("uploadForm").requestSubmit();
     }
 
     window.addEventListener("message", function(event) {
